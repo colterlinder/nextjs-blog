@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
+import Counter from '../components/Counter';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,7 +12,7 @@ export default function Home() {
       <h1 className={styles.title}>
           Colter Linder Welcomes, <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
+      <Counter />
 
     </div>
   );
