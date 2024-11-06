@@ -1,8 +1,8 @@
-html,
-body {
+/* Global Styles */
+html, body {
   padding: 0;
   margin: 0;
-  font-family:
+  font-family: 
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -15,18 +15,68 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+  background-color: #fff0d1; /* Light cream background */
+  color: #6a1b1a; /* Maroon text color */
+  text-align: center; /* Center text globally */
 }
+
 
 a {
-  color: inherit;
+  color: #6a1b1a; /* Maroon links */
   text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-* {
+a:hover {
+  color: #9e1b1b; /* Slightly lighter maroon on hover */
+}
+
+/* Universal box-sizing */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+/* Fun Box Styles */
+div, p, h1, h2, h3, h4, h5, h6 {
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid #6a1b1a; /* Maroon borders */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff0d1; /* Cream background for the boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Image handling */
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+  border: 3px solid #6a1b1a; /* Maroon border around images */
+  margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #6a1b1a; /* Maroon background */
+  color: #fff0d1; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9e1b1b; /* Slightly lighter maroon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  div, p, h1, h2, h3, h4, h5, h6 {
+    padding: 10px;
+    margin: 5px;
+  }
 }
